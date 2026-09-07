@@ -6,14 +6,12 @@ from sqlalchemy import (
     Boolean,
     ForeignKey
 )
-
 from sqlalchemy.orm import relationship
 
 from database import Base
 
 
 class Meeting(Base):
-
     __tablename__ = "meetings"
 
     id = Column(
@@ -46,7 +44,8 @@ class Meeting(Base):
 
     duration = Column(
         Integer,
-        nullable=True
+        nullable=True,
+        default=60
     )
 
     invite_link = Column(
@@ -57,6 +56,16 @@ class Meeting(Base):
     status = Column(
         String(30),
         default="scheduled"
+    )
+
+    host_name = Column(
+        String(100),
+        default="Parija Sharma"
+    )
+
+    passcode = Column(
+        String(20),
+        nullable=True
     )
 
     created_at = Column(
@@ -72,7 +81,6 @@ class Meeting(Base):
 
 
 class Participant(Base):
-
     __tablename__ = "participants"
 
     id = Column(
@@ -93,6 +101,16 @@ class Participant(Base):
     )
 
     is_host = Column(
+        Boolean,
+        default=False
+    )
+
+    is_muted = Column(
+        Boolean,
+        default=False
+    )
+
+    is_video_off = Column(
         Boolean,
         default=False
     )
