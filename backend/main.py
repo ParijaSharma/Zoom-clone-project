@@ -24,6 +24,8 @@ app.add_middleware(
         "http://localhost:3000",
         "http://127.0.0.1:3000",
         "http://localhost:3001",
+         "https://zoomclone-xi.vercel.app",
+        "https://zoomclone-4z65o8xvi-parijas-projects.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
