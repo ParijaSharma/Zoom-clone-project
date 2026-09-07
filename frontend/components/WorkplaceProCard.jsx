@@ -22,20 +22,24 @@ export default function WorkplaceProCard() {
       {/* GRAPHIC BANNER */}
       <div className="mt-4 overflow-hidden rounded-2xl bg-gradient-to-br from-[#0c66ee] to-[#043382] p-4 text-white shadow-inner">
         <div className="relative mx-auto flex max-w-[340px] flex-col gap-2 rounded-xl bg-[#09224f]/80 p-3 backdrop-blur-sm">
-          {/* Mock Video Grid Preview matching Zoom screenshot */}
-          <div className="relative flex h-28 items-center justify-center overflow-hidden rounded-lg bg-gradient-to-t from-black/60 to-transparent">
+          
+          {/* Main Video Box */}
+          <div className="relative h-36 w-full overflow-hidden rounded-lg bg-gray-900">
             <img
               src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
-              alt="Participant"
-              className="h-48 w-full object-cover"
+              alt="Sydney Doe"
+              className="h-full w-full object-cover object-top"
             />
-            <div className="absolute left-2 top-2 rounded-full bg-yellow-400 p-1 text-xs">
+            {/* Dark gradient at bottom for text contrast */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+
+            <div className="absolute left-2 top-2 rounded-full bg-yellow-400 p-1 text-xs shadow">
               😊
             </div>
-            <div className="absolute right-2 top-2 rounded-full bg-yellow-400 p-1 text-xs">
+            <div className="absolute right-2 top-2 rounded-full bg-yellow-400 p-1 text-xs shadow">
               👍
             </div>
-            <div className="absolute bottom-1.5 left-2 rounded bg-black/50 px-1.5 py-0.5 text-[10px] text-white">
+            <div className="absolute bottom-1.5 left-2 rounded bg-black/60 px-1.5 py-0.5 text-[10px] text-white backdrop-blur-xs">
               Sydney Doe
             </div>
           </div>
