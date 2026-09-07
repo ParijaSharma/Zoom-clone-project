@@ -28,12 +28,9 @@ export default function WorkplaceProCard() {
           {/* MAIN VIDEO TILE */}
           <div className="relative h-[170px] w-full overflow-hidden rounded-xl bg-gray-900">
             <img
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&h=450&q=80"
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
               alt="Sydney Doe"
               className="h-full w-full object-cover"
-              style={{
-                objectPosition: "center 20%",
-              }}
             />
 
             {/* LEFT REACTION */}
