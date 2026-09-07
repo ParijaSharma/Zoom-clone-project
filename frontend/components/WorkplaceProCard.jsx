@@ -25,9 +25,9 @@ export default function WorkplaceProCard() {
           {/* Mock Video Grid Preview matching Zoom screenshot */}
           <div className="relative flex h-28 items-center justify-center overflow-hidden rounded-lg bg-gradient-to-t from-black/60 to-transparent">
             <img
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80"
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
               alt="Participant"
-              className="h-full w-full object-cover"
+              className="h-48 w-full object-cover"
             />
             <div className="absolute left-2 top-2 rounded-full bg-yellow-400 p-1 text-xs">
               😊
