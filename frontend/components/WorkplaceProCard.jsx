@@ -1,7 +1,5 @@
 "use client";
 
-import { Sparkles } from "lucide-react";
-
 export default function WorkplaceProCard() {
   return (
     <section className="w-full rounded-2xl bg-white p-6 shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
@@ -23,49 +21,55 @@ export default function WorkplaceProCard() {
       <div className="mt-4 overflow-hidden rounded-2xl bg-gradient-to-br from-[#0c66ee] to-[#043382] p-4 text-white shadow-inner">
         <div className="relative mx-auto flex max-w-[340px] flex-col gap-2 rounded-xl bg-[#09224f]/80 p-3 backdrop-blur-sm">
           
-          {/* Main Video Box */}
-          <div className="relative h-36 w-full overflow-hidden rounded-lg bg-gray-900">
+          {/* TOP VIDEO TILE (Sydney Doe) */}
+          <div className="relative flex h-36 items-center justify-center overflow-hidden rounded-xl bg-gray-900">
             <img
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&crop=faces&w=600&h=350&q=80"
               alt="Sydney Doe"
-              className="h-full w-full object-cover object-top"
+              className="h-full w-full object-cover object-[center_18%]"
             />
-            {/* Dark gradient at bottom for text contrast */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
 
-            <div className="absolute left-2 top-2 rounded-full bg-yellow-400 p-1 text-xs shadow">
+            {/* Reactions Emojis */}
+            <div className="absolute left-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-yellow-400 text-sm shadow">
               😊
             </div>
-            <div className="absolute right-2 top-2 rounded-full bg-yellow-400 p-1 text-xs shadow">
+            <div className="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-yellow-400 text-sm shadow">
               👍
             </div>
-            <div className="absolute bottom-1.5 left-2 rounded bg-black/60 px-1.5 py-0.5 text-[10px] text-white backdrop-blur-xs">
+
+            {/* Name Tag */}
+            <div className="absolute bottom-2 left-2 rounded bg-black/60 px-2 py-0.5 text-[10px] font-medium text-white backdrop-blur-xs">
               Sydney Doe
             </div>
           </div>
 
+          {/* BOTTOM ROW (2 TILES) */}
           <div className="grid grid-cols-2 gap-2">
-            <div className="relative h-16 overflow-hidden rounded-lg bg-gray-800">
+            {/* Tile 1 - Man with Glasses */}
+            <div className="relative h-20 overflow-hidden rounded-xl bg-gray-900">
               <img
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
-                alt="Participant"
-                className="h-full w-full object-cover"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&crop=faces&w=300&h=200&q=80"
+                alt="David K."
+                className="h-full w-full object-cover object-[center_20%]"
               />
-              <span className="absolute bottom-1 left-1.5 rounded bg-black/50 px-1 text-[9px] text-white">
+              <span className="absolute bottom-1.5 left-1.5 rounded bg-black/60 px-1.5 py-0.5 text-[9px] font-medium text-white">
                 David K.
               </span>
             </div>
-            <div className="relative h-16 overflow-hidden rounded-lg bg-gray-800">
+
+            {/* Tile 2 - Woman with Glasses */}
+            <div className="relative h-20 overflow-hidden rounded-xl bg-gray-900">
               <img
-                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80"
-                alt="Participant"
-                className="h-full w-full object-cover"
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&crop=faces&w=300&h=200&q=80"
+                alt="Sarah M."
+                className="h-full w-full object-cover object-[center_20%]"
               />
-              <span className="absolute bottom-1 left-1.5 rounded bg-black/50 px-1 text-[9px] text-white">
+              <span className="absolute bottom-1.5 left-1.5 rounded bg-black/60 px-1.5 py-0.5 text-[9px] font-medium text-white">
                 Sarah M.
               </span>
             </div>
           </div>
+
         </div>
       </div>
 
