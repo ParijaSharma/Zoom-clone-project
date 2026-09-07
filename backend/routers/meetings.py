@@ -7,8 +7,7 @@ from sqlalchemy.orm import Session
 from database import get_db
 from models import Meeting, Participant
 from schemas import MeetingCreate, MeetingResponse, ParticipantCreate, ParticipantResponse
-
-
+import os
 router = APIRouter(
     prefix="/api/meetings",
     tags=["Meetings"]
@@ -30,7 +29,7 @@ def create_meeting(
     db: Session = Depends(get_db)
 ):
     meeting_id = generate_meeting_id(db)
-    invite_link = f"http://localhost:3000/meeting/{meeting_id}"
+    invite_link = f"http://{os.getenv('FRONTEND_URL', 'localhost:3000')}/meeting/{meeting_id}"
 
     meeting = Meeting(
         meeting_id=meeting_id,
